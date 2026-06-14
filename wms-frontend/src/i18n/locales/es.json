@@ -1,0 +1,785 @@
+{
+  "common": {
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "search": "Buscar...",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "register": "Registrar",
+    "dashboard": "Panel de control",
+    "excelDownload": "Descargar Excel",
+    "viewAll": "Ver todo",
+    "all": "Todo",
+    "logout_confirm": "¿Cerrar sesión?"
+  },
+  "header": {
+    "title": "WMS - Sistema de Gestión de Almacenes"
+  },
+  "sidebar": {
+    "dashboard": "Panel",
+    "productManagement": "Gestión de Productos",
+    "productList": "Lista de Productos",
+    "productCreate": "Registrar Producto",
+    "barcodePrint": "Imprimir Código de Barras",
+    "inboundManagement": "Gestión de Entradas",
+    "inboundList": "Lista de Entradas",
+    "inboundRegist": "Registrar Entrada",
+    "outboundManagement": "Gestión de Salidas",
+    "outboundList": "Lista de Salidas",
+    "outboundRegist": "Registrar Salida",
+    "inventoryManagement": "Gestión de Inventario",
+    "inventoryList": "Lista de Inventario",
+    "inventoryChangeHistory": "Historial de Ajustes",
+    "inventoryMoveHistory": "Historial de Movimientos",
+    "reports": "Informes",
+    "inventoryReport": "Estado de Inventario",
+    "ibtobdReport": "Informe de Entradas/Salidas",
+    "systemSettings": "Configuración del Sistema",
+    "locationManage": "Gestión de Ubicaciones",
+    "productCategoryManage": "Gestión de Categorías",
+    "userManagement": "Gestión de Usuarios",
+    "userAuthManagement": "Gestión de Permisos",
+    "codeManagement": "Gestión de Códigos",
+    "systemSetting": "Configuración Básica"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "subtitle": "Ingrese sus credenciales",
+    "id_or_email": "ID o Correo electrónico",
+    "password": "Contraseña",
+    "remember_me": "Mantener sesión iniciada",
+    "demo": "Cuentas de demostración"
+  },
+  "dashboard": {
+    "title": "Panel de Control Integral",
+    "realTime": "Recibiendo en tiempo real",
+    "thisWeek": "Tendencia de esta semana",
+    "detailFilter": "Filtros detallados",
+    "syncData": "Sincronizar datos",
+    "totalInbound": "Total Entradas",
+    "totalOutbound": "Total Salidas",
+    "currentStock": "Stock Actual",
+    "accuracy": "Precisión de Inventario",
+    "trendTitle": "Tendencia de Entradas/Salidas (Top 5)",
+    "trendSubtitle": "Flujo de variación de entradas y salidas principales durante la última semana",
+    "inbound": "Entradas",
+    "outbound": "Salidas",
+    "warehouseSection": "Asignación por Sección de Almacén",
+    "occupancyRate": "Tasa de ocupación de zonas activas",
+    "topRotation": "Productos con Mayor Rotación (Top 5)",
+    "topRotationSubtitle": "Ranking de frecuencia de entradas/salidas por ubicación",
+    "recentActivity": "Historial de Trabajos Recientes",
+    "recentActivitySubtitle": "Registros de trabajo de terminal en tiempo real en el sitio",
+    "alertTitle": "Alerta de stock bajo en tiempo real:",
+    "alertMessage": "El stock disponible del artículo C-003 está por debajo del nivel de seguridad recomendado por el sistema.",
+    "processOrder": "Procesar orden de compra",
+    "pie": {
+      "a": "Zona A (Acero)",
+      "b": "Zona B (Ropa)",
+      "c": "Zona C (Alimentos)",
+      "d": "Zona D (Riesgo)"
+    }    
+  },
+  "product": {
+    "breadcrumb": "Gestión de Productos",
+    "title": "Lista de Productos",
+    "detailTitle": "Detalle del Producto",
+    "search": {
+      "code": "Código",
+      "name": "Nombre",
+      "category": "Categoría",
+      "usage": "Estado de Uso",
+      "stockStatus": "Estado de Stock",
+      "btnSearch": "Consultar"
+    },
+    "fields": {
+      "code": "Código",
+      "name": "Nombre",
+      "category": "Categoría",
+      "spec": "Espec.",
+      "unit": "Unidad",
+      "currentStock": "Stock Actual",
+      "safetyStock": "Stock Seguridad",
+      "status": "Estado",
+      "isUse": "En Uso",
+      "loc": "Ubicación",
+      "manage": "Gestión"
+    },
+    "actions": {
+      "add": "Registrar Producto",
+      "uploadExcel": "Subir Excel",
+      "downloadExcel": "Bajar Excel",
+      "edit": "Editar",
+      "print": "Imprimir",
+      "delete": "Eliminar",
+      "barcodePrint": "Imprimir Código"
+    },
+    "status": {
+      "normal": "Normal",
+      "caution": "Aviso",
+      "shortage": "Falta",
+      "use": "En uso",
+      "unused": "No uso"
+    },
+    "categories": {
+      "electronics": "Electrónica",
+      "peripherals": "Periféricos",
+      "household": "Artículos del hogar",
+      "office": "Artículos de oficina"
+    },
+
+    "spec": {
+      "spec1": "Especificación 1",
+      "spec2": "Especificación 2",
+      "spec3": "Especificación 3"
+    },
+    "create": {
+      "breadcrumb": "Gestión de Productos",
+      "title": "Registrar Producto",
+      "basicInfo": "Información Básica",
+      "barcodeInfo": "Información de Código de Barras",
+      "barcodePreview": "Vista Previa",
+      "printOption": "Opciones de Impresión",
+      "labelPreview": "Vista Previa de Etiqueta",
+      "fields": {
+        "code": "Código",
+        "name": "Nombre",
+        "category": "Categoría",
+        "unit": "Unidad",
+        "brand": "Marca",
+        "spec": "Especificación",
+        "safetyStock": "Stock Seguridad",
+        "location": "Ubicación",
+        "isUse": "Estado de Uso",
+        "note": "Notas",
+        "barcodeNumber": "Número de Código",
+        "pageSize": "Tamaño de Página",
+        "printCount": "Cantidad de Impresión"
+      },
+      "placeholders": {
+        "code": "Auto-generado",
+        "name": "Ingrese nombre del producto",
+        "brand": "Seleccionar",
+        "spec": "Seleccionar",
+        "note": "Ingrese notas",
+        "barcode": "0000000000000"
+      },
+      "actions": {
+        "list": "Lista",
+        "reset": "Limpiar",
+        "save": "Guardar",
+        "generateBarcode": "Generar Código",
+        "preview": "Vista Previa",
+        "print": "Imprimir"
+      },
+      "status": {
+        "use": "En uso",
+        "unuse": "No disponible"
+      },
+      "unit": "EA"
+    },
+    "barcodePrint": {
+      "breadcrumb": "Gestión de Productos",
+      "title": "Impresión de Código de Barras",
+      "tabs": {
+        "list": "Lista de Códigos",
+        "notGenerated": "Productos Sin Código",
+        "labelPrint": "Imprimir Etiqueta",
+        "reprint": "Reimprimir"
+      },
+      "actions": {
+        "batchGenerate": "Generar Códigos",
+        "search": "Buscar",
+        "print": "Imprimir"
+      },
+      "search": {
+        "placeholder": "Ingrese código, nombre o código de barras"
+      },
+      "table": {
+        "code": "Código",
+        "name": "Nombre",
+        "barcode": "Código de Barras",
+        "createdAt": "Fecha de Creación",
+        "status": "Estado",
+        "print": "Imprimir"
+      },
+      "status": {
+        "normal": "Normal"
+      },
+      "noData": "No hay productos que coincidan con los criterios."
+    }
+  },
+  "inboundList": {
+    "breadcrumb": "Gestión de Entradas",
+    "title": "Lista de Entradas",
+    "detailTitle": "Detalle de Entrada",
+    "actions": {
+      "register": "Registrar Entrada",
+      "excelDownload": "Descargar Excel",
+      "search": "Buscar",
+      "reset": "Limpiar",
+      "detail": "Ver Detalle"
+    },
+    "search": {
+      "dateRange": "Fecha de Entrada",
+      "inboundNo": "Número de Entrada",
+      "supplier": "Proveedor",
+      "status": "Estado",
+      "placeholder": "Ingrese número de entrada"
+    },
+    "table": {
+      "inboundNo": "Número",
+      "receivedAt": "Fecha de Entrada",
+      "supplier": "Proveedor",
+      "productName": "Producto",
+      "qty": "Cantidad",
+      "location": "Ubicación",
+      "status": "Estado",
+      "manager": "Responsable"
+    },
+    "status": {
+      "completed": "Completado",
+      "pending": "Pendiente",
+      "cancelled": "Cancelado"
+    },
+    "noData": "No se encontraron entradas.",
+    "selectMessage": "Seleccione una entrada para ver detalles."
+  },
+  "inboundRegist": {
+    "breadcrumb": "Gestión de Entradas",
+    "title": "Registrar Entrada",
+    "fields": {
+      "inboundNo": "Número de Entrada",
+      "inboundDate": "Fecha de Entrada",
+      "manager": "Responsable",
+      "supplier": "Proveedor",
+      "barcodeScan": "Escaneo de Código",
+      "barcodePlaceholder": "Escanear código de barras",
+      "scan": "Escanear",
+      "productInfo": "Información del Producto",
+      "productCode": "Código",
+      "productName": "Nombre",
+      "currentStock": "Stock Actual",
+      "quantity": "Cantidad",
+      "location": "Ubicación",
+      "remark": "Notas",
+      "remarkPlaceholder": "Ingrese notas"
+    },
+    "actions": {
+      "cancel": "Cancelar",
+      "save": "Guardar"
+    },
+    "unit": "EA"
+  },
+  "outboundList": {
+    "breadcrumb": "Gestión de Salidas",
+    "title": "Lista de Salidas",
+    "detailTitle": "Detalle de Salida",
+    "actions": {
+      "register": "Registrar Salida",
+      "excelDownload": "Descargar Excel",
+      "search": "Buscar",
+      "reset": "Limpiar",
+      "detail": "Ver Detalle"
+    },
+    "search": {
+      "dateRange": "Fecha de Salida",
+      "outboundNo": "Número de Salida",
+      "customer": "Cliente",
+      "status": "Estado",
+      "placeholder": "Ingrese número de salida"
+    },
+    "table": {
+      "outboundNo": "Número",
+      "shippedAt": "Fecha de Salida",
+      "customer": "Cliente",
+      "productName": "Producto",
+      "qty": "Cantidad",
+      "location": "Ubicación",
+      "status": "Estado",
+      "manager": "Responsable"
+    },
+    "status": {
+      "completed": "Completado",
+      "pending": "Pendiente",
+      "cancelled": "Cancelado"
+    },
+    "noData": "No se encontraron salidas.",
+    "selectMessage": "Seleccione una salida para ver detalles."
+  },
+  "outboundRegist": {
+    "breadcrumb": "Gestión de Salidas",
+    "title": "Registrar Salida",
+    "fields": {
+      "outboundNo": "Número de Salida",
+      "outboundDate": "Fecha de Salida",
+      "manager": "Responsable",
+      "customer": "Cliente",
+      "barcodeScan": "Escaneo de Código",
+      "barcodePlaceholder": "Escanear código de barras",
+      "scan": "Escanear",
+      "productInfo": "Información del Producto",
+      "productCode": "Código",
+      "productName": "Nombre",
+      "currentStock": "Stock Actual",
+      "quantity": "Cantidad",
+      "location": "Ubicación",
+      "remark": "Notas",
+      "remarkPlaceholder": "Ingrese notas"
+    },
+    "actions": {
+      "cancel": "Cancelar",
+      "save": "Guardar"
+    },
+    "unit": "EA"
+  },
+  "inventoryList": {
+    "breadcrumb": "Gestión de Inventario",
+    "title": "Lista de Inventario",
+    "detailTitle": "Detalle de Inventario",
+    "search": {
+      "receiptDate": "Fecha de Entrada",
+      "all": "Todo",
+      "last7Days": "Últimos 7 días",
+      "last30Days": "Últimos 30 días",
+      "category": "Categoría",
+      "categoryAll": "Todas",
+      "electronics": "Electrónica",
+      "peripherals": "Periféricos",
+      "keyword": "Buscar por estado o palabra clave...",
+      "btnSearch": "Buscar",
+      "btnExcel": "Descargar Excel"
+    },
+    "fields": {
+      "code": "Código",
+      "name": "Nombre",
+      "spec": "Especificación",
+      "unit": "Unidad",
+      "currentStock": "Stock Actual",
+      "availableStock": "Stock Disponible",
+      "safetyStock": "Stock Seguridad",
+      "location": "Ubicación",
+      "status": "Estado"
+    },
+    "status": {
+      "normal": "Normal",
+      "caution": "Aviso",
+      "shortage": "Falta"
+    },
+    "actions": {
+      "adjust": "Ajuste de Stock",
+      "move": "Mover Ubicación",
+      "printBarcode": "Imprimir Código"
+    },
+    "legend": {
+      "normal": "Normal",
+      "caution": "Aviso",
+      "shortage": "Falta"
+    }
+  },
+  "inventoryChangeHistory": {
+    "breadcrumb": "Gestión de Inventario",
+    "title": "Historial de Ajustes de Inventario",
+    "search": {
+      "period": "Período",
+      "keyword": "Buscar",
+      "adjType": "Tipo de Ajuste",
+      "adjReason": "Motivo del Ajuste",
+      "all": "Todos",
+      "physicalCount": "Ajuste por Conteo Físico",
+      "lossAdjustment": "Ajuste por Pérdida",
+      "inboundAdjustment": "Ajuste por Entrada",
+      "inventoryCount": "Conteo de Inventario",
+      "damage": "Daño",
+      "inboundOmission": "Entrada Omitida",
+      "btnSearch": "Buscar",
+      "btnExcel": "Descargar Excel"
+    },
+    "table": {
+      "adjNo": "Número de Ajuste",
+      "adjDate": "Fecha de Ajuste",
+      "productCode": "Código",
+      "productName": "Nombre",
+      "adjType": "Tipo de Ajuste",
+      "adjReason": "Motivo",
+      "adjQty": "Cantidad Ajustada",
+      "beforeStock": "Stock Anterior",
+      "afterStock": "Stock Posterior",
+      "operator": "Responsable"
+    }
+  },
+  "inventoryMoveHistory": {
+    "breadcrumb": "Gestión de Inventario",
+    "title": "Historial de Movimientos de Inventario",
+    "search": {
+      "period": "Período",
+      "keyword": "Buscar",
+      "warehouse": "Almacén",
+      "moveType": "Tipo de Movimiento",
+      "all": "Todos",
+      "warehouseA": "Almacén A",
+      "warehouseB": "Almacén B",
+      "locationMove": "Movimiento de Ubicación",
+      "adjustment": "Ajuste",
+      "btnSearch": "Buscar",
+      "btnExcel": "Descargar Excel"
+    },
+    "table": {
+      "moveDate": "Fecha de Movimiento",
+      "moveType": "Tipo",
+      "productCode": "Código",
+      "productName": "Nombre",
+      "quantity": "Cantidad",
+      "fromLocation": "Ubicación Origen",
+      "toLocation": "Ubicación Destino",
+      "operator": "Responsable"
+    }
+  },
+  "ibtObdReport": {
+    "breadcrumb": "Estadísticas / Informes",
+    "title": "Resumen de Entradas y Salidas",
+    "search": {
+      "period": "Período",
+      "warehouse": "Almacén",
+      "type": "Tipo",
+      "all": "Todos",
+      "inbound": "Entrada",
+      "outbound": "Salida",
+      "btnSearch": "Buscar",
+      "btnExcel": "Descargar Excel"
+    },
+    "summary": {
+      "totalInQty": "Total Cantidad Entrada",
+      "totalInAmount": "Total Monto Entrada",
+      "totalOutQty": "Total Cantidad Salida",
+      "totalOutAmount": "Total Monto Salida"
+    },
+    "chart": {
+      "dailyQty": "Cantidad Diaria de Entradas/Salidas",
+      "dailyAmount": "Monto Diario de Entradas/Salidas"
+    },
+    "table": {
+      "date": "Fecha",
+      "type": "Tipo",
+      "qty": "Cantidad",
+      "amount": "Monto",
+      "count": "Cantidad de Registros"
+    },
+    "inbound": "Entrada",
+    "outbound": "Salida",
+    "unit": {
+      "ea": "EA",
+      "won": "원"
+    }
+  },
+  "inventoryReport": {
+    "breadcrumb": "Estadísticas / Informes",
+    "title": "Estado de Inventario",
+    "search": {
+      "period": "Período",
+      "warehouse": "Almacén",
+      "category": "Categoría",
+      "all": "Todos",
+      "warehouseA": "Almacén A",
+      "warehouseB": "Almacén B",
+      "electronics": "Electrónica",
+      "household": "Artículos para el hogar",
+      "btnSearch": "Buscar",
+      "btnExcel": "Descargar Excel"
+    },
+    "summary": {
+      "totalStock": "Stock Total",
+      "totalAmount": "Valor Total del Inventario",
+      "productCount": "Número de Productos",
+      "locationCount": "Número de Ubicaciones"
+    },
+    "topProducts": {
+      "title": "Top 5 Productos por Stock",
+      "rank": "Rank",
+      "code": "Código",
+      "name": "Nombre",
+      "currentStock": "Stock Actual",
+      "stockAmount": "Valor del Stock"
+    },
+    "topAmounts": {
+      "title": "Top 5 por Valor de Inventario"
+    },
+    "stockTrend": {
+      "title": "Tendencia de Cantidad de Stock"
+    },
+    "unit": {
+      "ea": "EA",
+      "piece": "unidades",
+      "won": "원"
+    }
+  },
+  "codeManage": {
+    "breadcrumb": "Configuración",
+    "title": "Gestión de Códigos",
+    "groups": {
+      "partnerType": "Tipo de Socio",
+      "outboundType": "Tipo de Salida",
+      "inboundType": "Tipo de Entrada",
+      "moveType": "Tipo de Movimiento",
+      "inspectionType": "Tipo de Inspección",
+      "unitCode": "Unidad",
+      "statusCode": "Estado"
+    },
+    "common": {
+      "codeGroup": "Grupo de Códigos",
+      "addGroup": "Nuevo Grupo",
+      "total": "Total",
+      "noGroups": "No hay grupos registrados.",
+      "selectGroup": "Seleccione un grupo de códigos primero.",
+      "noCodes": "No hay códigos registrados.",
+      "saveSuccess": "El código se ha guardado exitosamente."
+    },
+    "actions": {
+      "add": "Nuevo",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "groupEdit": "Editar nombre del grupo",
+      "groupSave": "Guardar nombre",
+      "groupDelete": "Eliminar grupo"
+    },
+    "table": {
+      "code": "Código",
+      "codeName": "Nombre",
+      "description": "Descripción",
+      "useYn": "Estado",
+      "delete": "Eliminar",
+      "codePlaceholder": "Ingrese código",
+      "namePlaceholder": "Ingrese nombre",
+      "descPlaceholder": "Ingrese descripción"
+    },
+    "confirm": {
+      "deleteGroup": "¿Está seguro de eliminar el grupo '${name}'?"
+    }
+  },
+  "locationManage": {
+    "breadcrumb": "Configuración",
+    "title": "Gestión de Ubicaciones",
+    "warehouse": {
+      "title": "Lista de Almacenes",
+      "add": "Nuevo",
+      "code": "Código",
+      "type": "Tipo",
+      "general": "General",
+      "cold": "Frío/Refrigerado"
+    },
+    "zone": {
+      "title": "Lista de Zonas",
+      "add": "Nuevo",
+      "locationCount": "Ubicaciones",
+      "noZones": "No hay zonas registradas."
+    },
+    "location": {
+      "title": "Gestión de Ubicaciones",
+      "selectZone": "Seleccione una zona",
+      "batchCreate": "Crear Lote",
+      "addLocation": "Agregar Ubicación",
+      "code": "Código",
+      "capacity": "Capacidad",
+      "currentUsage": "Uso Actual",
+      "usageRate": "Tasa de Uso",
+      "actions": "Acciones",
+      "locations": "ubicaciones"
+    },
+    "common": {
+      "total": "Total"
+    }
+  },
+  "productCategoryManage": {
+    "breadcrumb": "Configuración",
+    "title": "Gestión de Categorías de Productos",
+    "tree": {
+      "title": "Todas las Categorías"
+    },
+    "form": {
+      "title": "Información de Categoría",
+      "newMode": "Nuevo registro"
+    },
+    "fields": {
+      "parentCategory": "Categoría Superior",
+      "code": "Código",
+      "name": "Nombre",
+      "description": "Descripción",
+      "useYn": "Estado",
+      "use": "Activo",
+      "unused": "Inactivo",
+      "topCategory": "Categoría principal"
+    },
+    "actions": {
+      "new": "Nuevo",
+      "cancel": "Cancelar",
+      "delete": "Eliminar",
+      "save": "Guardar"
+    },
+    "placeholders": {
+      "code": "Código (ej: 01-01)",
+      "name": "Nombre de categoría",
+      "description": "Descripción de la categoría"
+    },
+    "confirm": {
+      "delete": "¿Está seguro de eliminar esta categoría? (Se eliminarán también las subcategorías)"
+    },
+    "alerts": {
+      "codeNameRequired": "Por favor ingrese el código y nombre de la categoría.",
+      "newCategoryAdded": "Nueva categoría agregada.",
+      "categoryUpdated": "Información de categoría actualizada.",
+      "deleted": "Eliminado."
+    }
+  },
+  "systemSetting": {
+    "breadcrumb": "Configuración",
+    "title": "Configuración del Sistema",
+    "tabs": {
+      "basic": "Configuración Básica",
+      "inbound": "Configuración de Entradas",
+      "outbound": "Configuración de Salidas",
+      "alarm": "Configuración de Alertas"
+    },
+    "basic": {
+      "companyName": "Nombre de la Empresa",
+      "businessNo": "Número de Registro Empresarial",
+      "ceoName": "Nombre del Representante Legal",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo Electrónico",
+      "defaultWarehouse": "Almacén Predeterminado",
+      "defaultLanguage": "Idioma Predeterminado",
+      "timezone": "Zona Horaria",
+      "dateFormat": "Formato de Fecha",
+      "useYn": "Estado de Uso",
+      "use": "Activo",
+      "unused": "Inactivo",
+      "warehouse1": "Almacén 1",
+      "warehouse2": "Almacén 2",
+      "warehouse3": "Almacén 3",
+      "korean": "Coreano",
+      "english": "Inglés",
+      "japanese": "Japonés",
+      "timezoneSeoul": "(GMT+09:00) Seúl",
+      "timezoneBeijing": "(GMT+08:00) Pekín",
+      "timezoneLondon": "(GMT+00:00) Londres",
+      "format1": "YYYY-MM-DD",
+      "format2": "YYYY.MM.DD",
+      "format3": "MM/DD/YYYY"
+    },
+    "inbound": {
+      "autoReceiveNo": "Numeración Automática de Entradas",
+      "defaultInboundType": "Tipo de Entrada Predeterminado",
+      "inspectionRequired": "Inspección Obligatoria",
+      "inboundMemo": "Notas de Entrada",
+      "purchaseInbound": "Compra",
+      "returnInbound": "Devolución",
+      "moveInbound": "Movimiento"
+    },
+    "outbound": {
+      "autoIssueNo": "Numeración Automática de Salidas",
+      "defaultOutboundType": "Tipo de Salida Predeterminado",
+      "stockCheck": "Verificación Automática de Stock",
+      "outboundMemo": "Notas de Salida",
+      "salesOutbound": "Venta",
+      "moveOutbound": "Movimiento",
+      "returnOutbound": "Devolución"
+    },
+    "alarm": {
+      "lowStockAlert": "Alerta de Stock Bajo",
+      "inboundDelayAlert": "Alerta de Retraso en Entrada",
+      "outboundDelayAlert": "Alerta de Retraso en Salida",
+      "alertEmail": "Correo de Alertas"
+    },
+    "actions": {
+      "cancel": "Cancelar",
+      "save": "Guardar"
+    },
+    "alerts": {
+      "saveSuccess": "La configuración se ha guardado exitosamente."
+    }
+  },
+  "userAuthManage": {
+    "breadcrumb": "Configuración",
+    "title": "Gestión de Permisos de Usuario",
+    "roleList": "Lista de Roles",
+    "permissionSetting": "Configuración de Permisos",
+    "roles": {
+      "ADMIN": "ADMIN",
+      "WMS_MGR": "WMS_MGR",
+      "INBOUND": "INBOUND",
+      "OUTBOUND": "OUTBOUND",
+      "VIEWER": "VIEWER"
+    },
+    "permissions": {
+      "view": "Ver",
+      "create": "Crear",
+      "update": "Editar",
+      "remove": "Eliminar",
+      "approve": "Aprobar"
+    },
+    "menus": {
+      "dashboard": "Panel de Control",
+      "productManagement": "Gestión de Productos",
+      "inboundManagement": "Gestión de Entradas",
+      "outboundManagement": "Gestión de Salidas",
+      "inventoryInquiry": "Consulta de Inventario",
+      "barcodeManagement": "Gestión de Códigos de Barras",
+      "reports": "Informes",
+      "settings": "Configuración"
+    },
+    "actions": {
+      "save": "Guardar"
+    }
+  },
+  "userManage": {
+    "breadcrumb": "Configuración",
+    "title": "Gestión de Usuarios",
+    "search": {
+      "name": "Nombre de Usuario",
+      "username": "ID de Usuario",
+      "dept": "Departamento",
+      "role": "Rol",
+      "useYn": "Estado de Uso",
+      "all": "Todos",
+      "search": "Buscar"
+    },
+    "actions": {
+      "register": "Registrar Usuario",
+      "uploadExcel": "Subir Excel",
+      "downloadExcel": "Descargar Excel"
+    },
+    "table": {
+      "id": "Número de Empleado",
+      "name": "Nombre",
+      "username": "ID",
+      "dept": "Departamento",
+      "role": "Rol",
+      "useYn": "Estado",
+      "manage": "Gestión"
+    },
+    "roles": {
+      "admin": "Administrador",
+      "inbound": "Responsable de Entradas",
+      "outbound": "Responsable de Salidas",
+      "viewer": "Solo Consulta"
+    },
+    "detail": {
+      "title": "Detalle de Usuario",
+      "id": "ID de Usuario",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "dept": "Departamento",
+      "role": "Rol",
+      "joinDate": "Fecha de Ingreso",
+      "lastLogin": "Último Acceso",
+      "edit": "Editar",
+      "resetPassword": "Restablecer Contraseña"
+    },
+    "status": {
+      "use": "Activo",
+      "unused": "Inactivo"
+    }
+  }                              
+}

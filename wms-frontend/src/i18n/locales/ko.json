@@ -1,0 +1,785 @@
+{
+  "common": {
+    "login": "로그인",
+    "logout": "로그아웃",
+    "search": "검색...",
+    "save": "저장",
+    "cancel": "취소",
+    "register": "등록",
+    "dashboard": "대시보드",
+    "excelDownload": "엑셀 다운로드",
+    "viewAll": "전체 보기",
+    "all": "전체",
+    "logout_confirm": "로그아웃 하시겠습니까?"
+  },
+  "header": {
+    "title": "WMS - 창고관리시스템"
+  },
+  "sidebar": {
+    "dashboard": "대시보드",
+    "productManagement": "상품관리",
+    "productList": "상품 목록",
+    "productCreate": "상품 등록",
+    "barcodePrint": "바코드 출력",
+    "inboundManagement": "입고관리",
+    "inboundList": "입고 목록",
+    "inboundRegist": "입고 등록",
+    "outboundManagement": "출고관리",
+    "outboundList": "출고 목록",
+    "outboundRegist": "출고 등록",
+    "inventoryManagement": "재고관리",
+    "inventoryList": "재고 목록",
+    "inventoryChangeHistory": "재고조정이력",
+    "inventoryMoveHistory": "재고이동내역",
+    "reports": "리포트",
+    "inventoryReport": "재고현황",
+    "ibtobdReport": "입출고현황",
+    "systemSettings": "시스템설정",
+    "locationManage": "창고위치관리",
+    "productCategoryManage": "상품분류관리",
+    "userManagement": "사용자관리",
+    "userAuthManagement": "사용자권한관리",
+    "codeManagement": "코드관리",
+    "systemSetting": "기본설정"
+  },
+  "login": {
+    "title": "로그인",
+    "subtitle": "계정 정보를 입력해주세요",
+    "id_or_email": "아이디 (이메일)",
+    "password": "비밀번호",
+    "remember_me": "로그인 상태 유지",
+    "demo": "데모 계정"
+  },
+  "dashboard": {
+    "title": "종합 모니터링 대시보드",
+    "realTime": "실시간 수신중",
+    "thisWeek": "이번 주 동향",
+    "detailFilter": "상세 조건",
+    "syncData": "데이터 동기화",
+    "totalInbound": "총 입고 수량",
+    "totalOutbound": "총 출고 수량",
+    "currentStock": "현재 총 재고",
+    "accuracy": "평균 재고 정확도",
+    "trendTitle": "입 / 출고 트렌드 (TOP 5 기준)",
+    "trendSubtitle": "최근 일주일 간 주요 입고 및 출고량 변동 흐름",
+    "inbound": "입고",
+    "outbound": "출고",
+    "warehouseSection": "창고 섹션별 할당 현황",
+    "occupancyRate": "현재 가동 중인 로케이션 존 점유율",
+    "topRotation": "실시간 회전율 상위 품목 (TOP 5)",
+    "topRotationSubtitle": "창고 내 로케이션 입출고 빈도 순위",
+    "recentActivity": "최근 입출고 및 실사 작업 이력",
+    "recentActivitySubtitle": "현장에서 발생하는 실시간 단말 작업 로그",
+    "alertTitle": "임계치 도달 실시간 재고 부족 알림:",
+    "alertMessage": "C-003 품목의 현재 가용 재고량이 안전 수준량 미달 상태입니다. (현재: 220 EA / 시스템 권장량: 300 EA)",
+    "processOrder": "이동 발주 처리",
+    "pie": {
+      "a": "A구역 (철재)",
+      "b": "B구역 (의류)",
+      "c": "C구역 (식품)",
+      "d": "D구역 (위험)"
+    }    
+  },
+  "product": {
+    "breadcrumb": "상품관리",
+    "title": "상품 목록",
+    "detailTitle": "상품 상세",
+    "search": {
+      "code": "상품코드",
+      "name": "상품명",
+      "category": "상품분류",
+      "usage": "사용여부",
+      "stockStatus": "재고상태",
+      "btnSearch": "조회"
+    },
+    "fields": {
+      "code": "상품코드",
+      "name": "상품명",
+      "category": "상품분류",
+      "spec": "규격",
+      "unit": "단위",
+      "currentStock": "현재재고",
+      "safetyStock": "안전재고",
+      "status": "재고상태",
+      "isUse": "사용여부",
+      "loc": "보관위치",
+      "manage": "관리"
+    },
+    "actions": {
+      "add": "상품등록",
+      "uploadExcel": "엑셀업로드",
+      "downloadExcel": "엑셀다운로드",
+      "edit": "수정",
+      "print": "출력",
+      "delete": "삭제",
+      "barcodePrint": "바코드 출력"
+    },
+    "status": {
+      "normal": "정상",
+      "caution": "주의",
+      "shortage": "부족",
+      "use": "사용",
+      "unused": "미사용"
+    },
+    "categories": {
+      "electronics": "전자제품",
+      "peripherals": "주변기기",
+      "household": "생활용품",
+      "office": "사무용품"
+    },
+
+    "spec": {
+      "spec1": "규격 1",
+      "spec2": "규격 2",
+      "spec3": "규격 3"
+    },
+    "create": {
+      "breadcrumb": "상품관리",
+      "title": "상품 등록",
+      "basicInfo": "기본 정보",
+      "barcodeInfo": "바코드 정보",
+      "barcodePreview": "바코드 미리보기",
+      "printOption": "인쇄 옵션",
+      "labelPreview": "라벨 미리보기",
+      "fields": {
+        "code": "상품코드",
+        "name": "상품명",
+        "category": "상품분류",
+        "unit": "단위",
+        "brand": "브랜드",
+        "spec": "규격",
+        "safetyStock": "안전재고",
+        "location": "보관위치",
+        "isUse": "사용여부",
+        "note": "비고",
+        "barcodeNumber": "바코드 번호",
+        "pageSize": "용지크기",
+        "printCount": "출력수량"
+      },
+      "placeholders": {
+        "code": "자동생성",
+        "name": "상품명을 입력하세요",
+        "brand": "선택하세요",
+        "spec": "선택하세요",
+        "note": "비고를 입력하세요",
+        "barcode": "0000000000000"
+      },
+      "actions": {
+        "list": "목록",
+        "reset": "초기화",
+        "save": "저장",
+        "generateBarcode": "바코드 생성",
+        "preview": "미리보기",
+        "print": "인쇄"
+      },
+      "status": {
+        "use": "사용",
+        "unuse": "미사용"
+      },
+      "unit": "EA"
+    },
+    "barcodePrint": {
+      "breadcrumb": "상품관리",
+      "title": "바코드 출력",
+      "tabs": {
+        "list": "바코드 목록",
+        "notGenerated": "바코드 미생성 상품",
+        "labelPrint": "라벨 인쇄",
+        "reprint": "재인쇄"
+      },
+      "actions": {
+        "batchGenerate": "바코드 일괄생성",
+        "search": "조회",
+        "print": "인쇄"
+      },
+      "search": {
+        "placeholder": "상품코드/명/바코드를 입력하세요"
+      },
+      "table": {
+        "code": "상품코드",
+        "name": "상품명",
+        "barcode": "바코드번호",
+        "createdAt": "생성일시",
+        "status": "상태",
+        "print": "출력"
+      },
+      "status": {
+        "normal": "정상"
+      },
+      "noData": "선택하신 탭의 데이터 내역을 조회 중이거나 조건에 맞는 상품이 존재하지 않습니다."
+    }
+  },
+  "inboundList": {
+    "breadcrumb": "입고관리",
+    "title": "입고 목록",
+    "detailTitle": "입고 상세",
+    "actions": {
+      "register": "입고 등록",
+      "excelDownload": "엑셀 다운로드",
+      "search": "조회",
+      "reset": "초기화",
+      "detail": "상세보기"
+    },
+    "search": {
+      "dateRange": "입고일자",
+      "inboundNo": "입고번호",
+      "supplier": "공급처",
+      "status": "상태",
+      "placeholder": "입고번호를 입력하세요"
+    },
+    "table": {
+      "inboundNo": "입고번호",
+      "receivedAt": "입고일시",
+      "supplier": "공급처",
+      "productName": "상품명",
+      "qty": "수량",
+      "location": "입고위치",
+      "status": "상태",
+      "manager": "입고담당자"
+    },
+    "status": {
+      "completed": "완료",
+      "pending": "대기",
+      "cancelled": "취소"
+    },
+    "noData": "조회된 입고 내역이 없습니다.",
+    "selectMessage": "선택된 입고 정보가 없습니다."
+  },
+  "inboundRegist": {
+    "breadcrumb": "입고관리",
+    "title": "입고 등록",
+    "fields": {
+      "inboundNo": "입고번호",
+      "inboundDate": "입고일자",
+      "manager": "입고담당자",
+      "supplier": "거래처",
+      "barcodeScan": "바코드 스캔",
+      "barcodePlaceholder": "스캐너로 바코드를 스캔하세요",
+      "scan": "스캔",
+      "productInfo": "상품정보",
+      "productCode": "상품코드",
+      "productName": "상품명",
+      "currentStock": "현재재고",
+      "quantity": "입고수량",
+      "location": "입고위치",
+      "remark": "비고",
+      "remarkPlaceholder": "비고를 입력하세요"
+    },
+    "actions": {
+      "cancel": "취소",
+      "save": "저장"
+    },
+    "unit": "EA"
+  },
+  "outboundList": {
+    "breadcrumb": "출고관리",
+    "title": "출고 목록",
+    "detailTitle": "출고 상세",
+    "actions": {
+      "register": "출고 등록",
+      "excelDownload": "엑셀 다운로드",
+      "search": "조회",
+      "reset": "초기화",
+      "detail": "상세보기"
+    },
+    "search": {
+      "dateRange": "출고일자",
+      "outboundNo": "출고번호",
+      "customer": "출고처",
+      "status": "상태",
+      "placeholder": "출고번호를 입력하세요"
+    },
+    "table": {
+      "outboundNo": "출고번호",
+      "shippedAt": "출고일시",
+      "customer": "출고처",
+      "productName": "상품명",
+      "qty": "수량",
+      "location": "출고위치",
+      "status": "상태",
+      "manager": "출고담당자"
+    },
+    "status": {
+      "completed": "완료",
+      "pending": "대기",
+      "cancelled": "취소"
+    },
+    "noData": "조회된 출고 내역이 없습니다.",
+    "selectMessage": "선택된 출고 정보가 없습니다."
+  },
+  "outboundRegist": {
+    "breadcrumb": "출고관리",
+    "title": "출고 등록",
+    "fields": {
+      "outboundNo": "출고번호",
+      "outboundDate": "출고일자",
+      "manager": "출고담당자",
+      "customer": "출고처",
+      "barcodeScan": "바코드 스캔",
+      "barcodePlaceholder": "스캐너로 바코드를 스캔하세요",
+      "scan": "스캔",
+      "productInfo": "상품정보",
+      "productCode": "상품코드",
+      "productName": "상품명",
+      "currentStock": "현재재고",
+      "quantity": "출고수량",
+      "location": "출고위치",
+      "remark": "비고",
+      "remarkPlaceholder": "비고를 입력하세요"
+    },
+    "actions": {
+      "cancel": "취소",
+      "save": "저장"
+    },
+    "unit": "EA"
+  },
+  "inventoryList": {
+    "breadcrumb": "재고관리",
+    "title": "재고 목록",
+    "detailTitle": "재고 상세",
+    "search": {
+      "receiptDate": "입고일자",
+      "all": "전체",
+      "last7Days": "최근 7일",
+      "last30Days": "최근 30일",
+      "category": "상품분류",
+      "categoryAll": "전체",
+      "electronics": "전자제품",
+      "peripherals": "주변기기",
+      "keyword": "재고상태 / 검색어",
+      "btnSearch": "조회",
+      "btnExcel": "엑셀다운로드"
+    },
+    "fields": {
+      "code": "상품코드",
+      "name": "상품명",
+      "spec": "규격",
+      "unit": "단위",
+      "currentStock": "현재재고",
+      "availableStock": "가용재고",
+      "safetyStock": "안전재고",
+      "location": "위치",
+      "status": "상태"
+    },
+    "status": {
+      "normal": "정상",
+      "caution": "주의",
+      "shortage": "부족"
+    },
+    "actions": {
+      "adjust": "재고조정",
+      "move": "위치이동",
+      "printBarcode": "바코드 출력"
+    },
+    "legend": {
+      "normal": "정상",
+      "caution": "주의",
+      "shortage": "부족"
+    }
+  },
+  "inventoryChangeHistory": {
+    "breadcrumb": "재고관리",
+    "title": "재고조정이력",
+    "search": {
+      "period": "기간",
+      "keyword": "검색어",
+      "adjType": "조정유형",
+      "adjReason": "조정사유",
+      "all": "전체",
+      "physicalCount": "물리실사 조정",
+      "lossAdjustment": "손실조정",
+      "inboundAdjustment": "입고조정",
+      "inventoryCount": "재고실사",
+      "damage": "파손",
+      "inboundOmission": "입고누락",
+      "btnSearch": "조회",
+      "btnExcel": "엑셀다운로드"
+    },
+    "table": {
+      "adjNo": "조정번호",
+      "adjDate": "조정일자",
+      "productCode": "상품코드",
+      "productName": "상품명",
+      "adjType": "조정유형",
+      "adjReason": "조정사유",
+      "adjQty": "조정수량",
+      "beforeStock": "조정 전 재고",
+      "afterStock": "조정 후 재고",
+      "operator": "조정자"
+    }
+  },
+  "inventoryMoveHistory": {
+    "breadcrumb": "재고관리",
+    "title": "재고이동내역",
+    "search": {
+      "period": "조회기간",
+      "keyword": "검색어",
+      "warehouse": "창고",
+      "moveType": "이동구분",
+      "all": "전체",
+      "warehouseA": "A창고",
+      "warehouseB": "B창고",
+      "locationMove": "위치이동",
+      "adjustment": "조정",
+      "btnSearch": "조회",
+      "btnExcel": "엑셀다운로드"
+    },
+    "table": {
+      "moveDate": "이동일자",
+      "moveType": "이동구분",
+      "productCode": "상품코드",
+      "productName": "상품명",
+      "quantity": "이동수량",
+      "fromLocation": "출발위치",
+      "toLocation": "도착위치",
+      "operator": "작업자"
+    }
+  },
+  "ibtObdReport": {
+    "breadcrumb": "통계/리포트",
+    "title": "입출고현황",
+    "search": {
+      "period": "조회기간",
+      "warehouse": "창고",
+      "type": "구분",
+      "all": "전체",
+      "inbound": "입고",
+      "outbound": "출고",
+      "btnSearch": "조회",
+      "btnExcel": "엑셀다운로드"
+    },
+    "summary": {
+      "totalInQty": "총 입고수량",
+      "totalInAmount": "총 입고금액",
+      "totalOutQty": "총 출고수량",
+      "totalOutAmount": "총 출고금액"
+    },
+    "chart": {
+      "dailyQty": "일별 입출고 수량",
+      "dailyAmount": "일별 입출고 금액"
+    },
+    "table": {
+      "date": "일자",
+      "type": "구분",
+      "qty": "입출고수량",
+      "amount": "입출고금액",
+      "count": "건수"
+    },
+    "inbound": "입고",
+    "outbound": "출고",
+    "unit": {
+      "ea": "EA",
+      "won": "원"
+    }
+  },
+  "inventoryReport": {
+    "breadcrumb": "통계/리포트",
+    "title": "재고현황",
+    "search": {
+      "period": "기간",
+      "warehouse": "창고",
+      "category": "상품분류",
+      "all": "전체",
+      "warehouseA": "A창고",
+      "warehouseB": "B창고",
+      "electronics": "전자제품",
+      "household": "생활용품",
+      "btnSearch": "조회",
+      "btnExcel": "엑셀다운로드"
+    },
+    "summary": {
+      "totalStock": "총 재고수량",
+      "totalAmount": "총 재고금액",
+      "productCount": "상품 수",
+      "locationCount": "위치 수"
+    },
+    "topProducts": {
+      "title": "상품별 재고 현황 (Top 5)",
+      "rank": "순위",
+      "code": "상품코드",
+      "name": "상품명",
+      "currentStock": "현재재고",
+      "stockAmount": "재고금액"
+    },
+    "topAmounts": {
+      "title": "재고금액 TOP 5"
+    },
+    "stockTrend": {
+      "title": "재고 수량 추이"
+    },
+    "unit": {
+      "ea": "EA",
+      "piece": "개",
+      "won": "원"
+    }
+  },
+  "codeManage": {
+    "breadcrumb": "설정",
+    "title": "코드관리",
+    "groups": {
+      "partnerType": "거래처구분",
+      "outboundType": "출고유형",
+      "inboundType": "입고유형",
+      "moveType": "이동구분",
+      "inspectionType": "실사구분",
+      "unitCode": "단위코드",
+      "statusCode": "상태코드"
+    },
+    "common": {
+      "codeGroup": "코드그룹",
+      "addGroup": "그룹추가",
+      "total": "총",
+      "noGroups": "등록된 그룹이 없습니다.",
+      "selectGroup": "코드그룹을 먼저 선택해주세요.",
+      "noCodes": "등록된 코드가 없습니다.",
+      "saveSuccess": "코드가 저장되었습니다."
+    },
+    "actions": {
+      "add": "신규등록",
+      "cancel": "취소",
+      "save": "저장",
+      "edit": "수정",
+      "delete": "삭제",
+      "groupEdit": "그룹명 수정",
+      "groupSave": "그룹명 저장",
+      "groupDelete": "그룹 삭제"
+    },
+    "table": {
+      "code": "코드",
+      "codeName": "코드명",
+      "description": "설명",
+      "useYn": "사용여부",
+      "delete": "삭제",
+      "codePlaceholder": "코드 입력",
+      "namePlaceholder": "코드명 입력",
+      "descPlaceholder": "설명 입력"
+    },
+    "confirm": {
+      "deleteGroup": "'${name}' 그룹을 삭제하시겠습니까?"
+    }
+  },
+  "locationManage": {
+    "breadcrumb": "설정",
+    "title": "창고위치관리",
+    "warehouse": {
+      "title": "창고 목록",
+      "add": "추가",
+      "code": "코드",
+      "type": "타입",
+      "general": "일반",
+      "cold": "냉장/냉동"
+    },
+    "zone": {
+      "title": "구역(Zone) 목록",
+      "add": "추가",
+      "locationCount": "로케이션",
+      "noZones": "등록된 구역이 없습니다."
+    },
+    "location": {
+      "title": "로케이션 관리",
+      "selectZone": "구역을 선택해주세요",
+      "batchCreate": "일괄 생성",
+      "addLocation": "로케이션 추가",
+      "code": "로케이션 코드",
+      "capacity": "적재 용량",
+      "currentUsage": "현재 사용량",
+      "usageRate": "사용률",
+      "actions": "관리",
+      "locations": "개"
+    },
+    "common": {
+      "total": "총"
+    }
+  },
+  "productCategoryManage": {
+    "breadcrumb": "설정",
+    "title": "상품분류관리",
+    "tree": {
+      "title": "전체분류"
+    },
+    "form": {
+      "title": "분류정보",
+      "newMode": "신규 작성 중"
+    },
+    "fields": {
+      "parentCategory": "상위분류",
+      "code": "분류코드",
+      "name": "분류명",
+      "description": "설명",
+      "useYn": "사용여부",
+      "use": "사용",
+      "unused": "미사용",
+      "topCategory": "최상위 분류"
+    },
+    "actions": {
+      "new": "신규등록",
+      "cancel": "취소",
+      "delete": "삭제",
+      "save": "저장"
+    },
+    "placeholders": {
+      "code": "분류코드 (예: 01-01)",
+      "name": "분류명 입력",
+      "description": "분류에 대한 설명을 입력하세요"
+    },
+    "confirm": {
+      "delete": "선택한 분류를 삭제하시겠습니까? (하위 분류도 함께 삭제됩니다)"
+    },
+    "alerts": {
+      "codeNameRequired": "분류코드와 분류명을 입력해주세요.",
+      "newCategoryAdded": "신규 분류가 추가되었습니다.",
+      "categoryUpdated": "분류 정보가 수정되었습니다.",
+      "deleted": "삭제되었습니다."
+    }
+  },
+  "systemSetting": {
+    "breadcrumb": "설정",
+    "title": "시스템설정",
+    "tabs": {
+      "basic": "기본설정",
+      "inbound": "입고설정",
+      "outbound": "출고설정",
+      "alarm": "알림설정"
+    },
+    "basic": {
+      "companyName": "회사명",
+      "businessNo": "사업자등록번호",
+      "ceoName": "대표자명",
+      "address": "주소",
+      "phone": "전화번호",
+      "email": "이메일",
+      "defaultWarehouse": "기본창고",
+      "defaultLanguage": "기본언어",
+      "timezone": "시간대",
+      "dateFormat": "날짜형식",
+      "useYn": "사용여부",
+      "use": "사용",
+      "unused": "미사용",
+      "warehouse1": "1창고",
+      "warehouse2": "2창고",
+      "warehouse3": "3창고",
+      "korean": "한국어",
+      "english": "English",
+      "japanese": "日本語",
+      "timezoneSeoul": "(GMT+09:00) 서울",
+      "timezoneBeijing": "(GMT+08:00) 베이징",
+      "timezoneLondon": "(GMT+00:00) 런던",
+      "format1": "YYYY-MM-DD",
+      "format2": "YYYY.MM.DD",
+      "format3": "MM/DD/YYYY"
+    },
+    "inbound": {
+      "autoReceiveNo": "입고번호 자동채번",
+      "defaultInboundType": "기본 입고유형",
+      "inspectionRequired": "검수 필수여부",
+      "inboundMemo": "입고 메모",
+      "purchaseInbound": "구매입고",
+      "returnInbound": "반품입고",
+      "moveInbound": "이동입고"
+    },
+    "outbound": {
+      "autoIssueNo": "출고번호 자동채번",
+      "defaultOutboundType": "기본 출고유형",
+      "stockCheck": "재고 자동검사",
+      "outboundMemo": "출고 메모",
+      "salesOutbound": "판매출고",
+      "moveOutbound": "이동출고",
+      "returnOutbound": "반품출고"
+    },
+    "alarm": {
+      "lowStockAlert": "안전재고 알림",
+      "inboundDelayAlert": "입고지연 알림",
+      "outboundDelayAlert": "출고지연 알림",
+      "alertEmail": "알림 이메일"
+    },
+    "actions": {
+      "cancel": "취소",
+      "save": "저장"
+    },
+    "alerts": {
+      "saveSuccess": "설정이 저장되었습니다."
+    }
+  },
+  "userAuthManage": {
+    "breadcrumb": "설정",
+    "title": "사용자권한관리",
+    "roleList": "역할 목록",
+    "permissionSetting": "권한 설정",
+    "roles": {
+      "ADMIN": "ADMIN",
+      "WMS_MGR": "WMS_MGR",
+      "INBOUND": "INBOUND",
+      "OUTBOUND": "OUTBOUND",
+      "VIEWER": "VIEWER"
+    },
+    "permissions": {
+      "view": "조회",
+      "create": "등록",
+      "update": "수정",
+      "remove": "삭제",
+      "approve": "승인"
+    },
+    "menus": {
+      "dashboard": "대시보드",
+      "productManagement": "상품관리",
+      "inboundManagement": "입고관리",
+      "outboundManagement": "출고관리",
+      "inventoryInquiry": "재고조회",
+      "barcodeManagement": "바코드관리",
+      "reports": "리포트",
+      "settings": "설정"
+    },
+    "actions": {
+      "save": "저장"
+    }
+  },
+  "userManage": {
+    "breadcrumb": "설정",
+    "title": "사용자관리",
+    "search": {
+      "name": "사용자명",
+      "username": "아이디",
+      "dept": "부서",
+      "role": "권한",
+      "useYn": "사용여부",
+      "all": "전체",
+      "search": "조회"
+    },
+    "actions": {
+      "register": "사용자등록",
+      "uploadExcel": "엑셀업로드",
+      "downloadExcel": "엑셀다운로드"
+    },
+    "table": {
+      "id": "사번",
+      "name": "이름",
+      "username": "아이디",
+      "dept": "부서",
+      "role": "권한",
+      "useYn": "사용여부",
+      "manage": "관리"
+    },
+    "roles": {
+      "admin": "관리자",
+      "inbound": "입고담당자",
+      "outbound": "출고담당자",
+      "viewer": "조회전용"
+    },
+    "detail": {
+      "title": "사용자 상세",
+      "id": "아이디",
+      "email": "이메일",
+      "phone": "연락처",
+      "dept": "부서",
+      "role": "권한",
+      "joinDate": "입사일",
+      "lastLogin": "최종 로그인",
+      "edit": "수정",
+      "resetPassword": "비밀번호 초기화"
+    },
+    "status": {
+      "use": "사용",
+      "unused": "미사용"
+    }
+  }                              
+}

@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `users` (
+    `id`          BIGINT PRIMARY KEY AUTO_INCREMENT,
+    `username`    VARCHAR(50)  NOT NULL UNIQUE,
+    `email`       VARCHAR(100) NOT NULL UNIQUE,
+    `password`    VARCHAR(255) NOT NULL,
+    `name`        VARCHAR(50)  NOT NULL,
+    `role`        VARCHAR(20)  NOT NULL DEFAULT 'viewer',
+    `is_active`   TINYINT(1)   NOT NULL DEFAULT 1,
+    `created_at`  DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at`  DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    INDEX `idx_email` (`email`),
+    INDEX `idx_username` (`username`),
+    INDEX `idx_role` (`role`),
+    INDEX `idx_active` (`is_active`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `users` (`username`, `email`, `password`, `name`, `role`) VALUES
+('daniel', 'daniel@gmail.com', '$2b$10$pNEgbWY4.chmKUKSprXuruVu/JcRCpZgOTaVRGXzHXWekCieM9/DC', '다니엘', 'admin'),
+('kim', 'kim@wms.com', '$2b$10$pNEgbWY4.chmKUKSprXuruVu/JcRCpZgOTaVRGXzHXWekCieM9/DC', '김철수', 'inbound'),
+('lee', 'lee@wms.com', '$2b$10$pNEgbWY4.chmKUKSprXuruVu/JcRCpZgOTaVRGXzHXWekCieM9/DC', '이영희', 'outbound'),
+('park', 'park@wms.com', '$2b$10$pNEgbWY4.chmKUKSprXuruVu/JcRCpZgOTaVRGXzHXWekCieM9/DC', '박민수', 'viewer');
+
