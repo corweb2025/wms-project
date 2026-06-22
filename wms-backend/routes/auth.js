@@ -9,9 +9,9 @@ const router = express.Router();
 
 const cookieOpts = {
   httpOnly: true,
-  secure: false,           // 개발 환경이므로 false (배포 시 true로 변경)
-  sameSite: 'lax',
-  maxAge: 8 * 60 * 60 * 1000, // 8시간
+  secure: process.env.NODE_ENV === 'production',   // HTTPS에서는 true
+  sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+  maxAge: 8 * 60 * 60 * 1000,
   path: '/'
 };
 
